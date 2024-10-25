@@ -1,0 +1,146 @@
+body {
+    font-family: sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive; /* Using the pixel font */
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+#logsContainer, #result {
+    max-width: 600px;
+    width: 100%;
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 2rem;
+
+}
+.log-entry {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+.input-group {
+    display: flex;
+    justify-content: center; /* Center the input group */
+    margin-bottom: 1rem;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    border-radius: 8px;
+    overflow: hidden; /* To ensure rounded corners */
+}
+
+.input-group input {
+    border: 1px solid #444;
+    background-color: #333; /* Dark input background */
+    color: #e0e0e0; /* Light text */
+    border-radius: 8px 0 0 8px;
+    padding: 10px;
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(187, 134, 252, 0.7); /* Glow effect when focused */
+}
+
+.input-group button {
+    background-color: #bb86fc; /* Purple accent color */
+    color: #121212; /* Dark text */
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 0 8px 8px 0; /* Rounded corners on the right */
+    outline: none;
+}
+
+.input-group button:hover {
+    background-color: #9a5bc1; /* Darker purple on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.input-group button:active {
+    transform: translateY(0); /* Reset position when clicked */
+    background-color: #7f43a1; /* Even darker purple when clicked */
+}
+
+.button {
+    background-color: #03dac5; /* Teal accent color */
+    color: #121212; /* Dark text */
+    padding: 12px 24px;
+    font-size: 1.1rem; /* Slightly larger font size */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    outline: none;
+}
+
+.button:hover {
+    background-color: #00bfa6; /* Darker teal on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.button:active {
+    transform: translateY(0); /* Reset position when clicked */
+    background-color: #009f8c; /* Even darker teal when clicked */
+}
+
+#searchButton:hover{
+    background-color: #9a5bc1; /* Darker purple on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+#searchButton:hover{
+    transform: translateY(0); /* Reset position when clicked */
+    background-color: #7f43a1; /* Even darker teal when clicked */
+}
+
+#logsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+#logsTable th, #logsTable td {
+    padding: 12px 15px;
+    border: 1px solid #444;
+    text-align: left;
+}
+
+#logsTable th {
+    background-color: #333;
+    color: #bb86fc;
+}
+
+#logsTable td {
+    background-color: #2a2a2a;
+}
+
+#logsTable tbody tr:hover {
+    background-color: #444;
+    transform: scale(1.02);
+    transition: all 0.2s;
+}
